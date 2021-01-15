@@ -1,0 +1,36 @@
+<html>
+
+<body>
+
+	Username:
+	<input id="username" type="text">
+	</input> &nbsp; password:
+	<input id = "password" type="password">
+	</input>
+<button id="login" onclick="loginFunction()">login</button>
+
+<p>Not of a user! <button id="register" onclick="registerFunction()">Register</button> </p>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript">
+let name = 'Raj'
+function loginFunction(){
+	var userName = $('#username').val();
+	var password = $('#password').val();
+	var loginUrl = "/"+userName+"/"+password;
+	
+	$.get("loginUrl" , function(status){
+		alert(status);
+	});
+}
+
+function registerFunction(){
+	var registrationPage = document.getElementById("register").onclick = function() {
+		
+		alert('redirection to new page')
+	};
+}
+</script>
+
+</body>
+
+</html>

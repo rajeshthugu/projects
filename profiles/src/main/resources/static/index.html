@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+    <title>Players login</title>
+
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/ui-darkness/jquery-ui.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/site.css"/>
+
+</head>
+<body>
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="/">Player Profiles</a>
+        </div>
+    </div>
+</nav>
+<div class="container">
+
+    <div class="page-header">
+        &nbsp;
+        <h1>Players and admins please login</h1>
+    </div>
+
+    <div>
+        User Name: &nbsp; <input type="text" id="userNameId" name="User name"/> &nbsp;
+        password: &nbsp; <input type="password" id="password" name="password"/> &nbsp;
+        <button id="login" >login</button>
+        &nbsp;
+        <button id="AdminLogin" >Admin login</button>
+
+
+    </div>
+
+    <div>
+        &nbsp;
+    </div>
+
+    <div>Not of a user! <button id="register" onclick="registerFunction()">Register</button> </div>
+
+</div>
+<footer class="footer navbar-inverse navbar-fixed-bottom">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4"><p class="text-muted">@Copyright 2020 Raj Thugu</p></div>
+        </div>
+    </div>
+</footer>
+
+<script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="js/site.js"></script>
+</body>
+</html>
